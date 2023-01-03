@@ -66,3 +66,33 @@ print(*"TBMM",sep=".")
 a = 3
 b = 4
 print("{} + {} equals {}".format(a,b,a+b))
+
+# Lists
+temp = ["Apple",35,"Hello",3.14]
+print(len(temp))
+
+# indexing and slicing
+print(temp[2])
+print(temp[-1])
+print(temp[len(temp)-1]) # last value in list
+print(temp[::-1]) # inverse of list
+
+temp[:2] = [10,11] # change first two value
+print(temp)
+
+# methods
+
+# append
+temp.append("Python") # to add value to end of the list
+print(temp)
+# pop
+temp.pop(0) # to discard item from the list
+print(temp)
+# sort both numerical and alphabetic
+a = [1,4,2,5,9]
+a.sort(reverse=True)
+print(a)
+
+# list in a list
+a=[[2,2],[3,3],[4,4]]
+print(a[2][0]) # gives you four
