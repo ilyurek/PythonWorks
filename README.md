@@ -1,2 +1,2 @@
 # test.project
-My First Project
+Trying to remember Python syntax..
