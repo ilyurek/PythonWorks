@@ -1,5 +1,5 @@
 # Hello World
-print('Remember the Pyhton')
+print('Remember the Python')
 # Integer - Float
 print(56 / 7)  # equals 8
 print(54.25 / 7.1)  # 7.64
@@ -30,3 +30,39 @@ print(len(x))  # length
 y = "Man"
 print(x + y)
 # str does not support item assignment
+
+# Type conversion
+
+# integer to float
+a = 43
+a = float(a)
+print(a)
+
+# float to integer
+b = 4.7
+b = int(b)
+print(b)
+
+# integer to string
+a = 24
+a = str(a)
+print(a)
+
+# Print and Format
+print("ilyurek")
+print("İlyurek","Kılıç",2429157)
+
+# /n and /t
+print("İlyurek\nKılıç")
+print("İlyurek\tKılıç")
+
+# parameters of print function
+print("İlyurek","Kılıç",2429157,sep="\n")
+print("06","04","1997",sep="/")
+# *
+print(*"Python",sep="/")
+print(*"TBMM",sep=".")
+# format function
+a = 3
+b = 4
+print("{} + {} equals {}".format(a,b,a+b))
