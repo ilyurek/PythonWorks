@@ -96,3 +96,37 @@ print(a)
 # list in a list
 a=[[2,2],[3,3],[4,4]]
 print(a[2][0]) # gives you four
+
+# Tuples
+a = (1,2,3,2,4,3,2,3,4,1)
+print(a[0])
+
+# methods
+
+# count
+print(a.count(2)) # returns count of item in tuple
+# index
+print(a.index(2)) # returns index of item in tuple
+
+# tuples do not support item assignment
+
+# Dictionaries
+d = {"One":1,"Two":2,"Three":3}
+print(d)
+print(d["One"])
+d["Four"] = 4
+print(d)
+a = {"numbers":{"One":1,"Two":2,"Three":3},"fruits":{"orange":"winter","watermelon":"summer"}}
+print(a)
+
+# methods
+
+print(d.keys()) # returns keys
+print(d.values()) # returns values
+print(d.items()) # returns tuples
+
+# Input from user
+a = int(input("Please Enter a Number"))
+print("The Value is",a)
+print(type(a))
+
