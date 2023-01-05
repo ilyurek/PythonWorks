@@ -111,6 +111,7 @@ print(a.index(2)) # returns index of item in tuple
 # tuples do not support item assignment
 
 # Dictionaries
+
 d = {"One":1,"Two":2,"Three":3}
 print(d)
 print(d["One"])
@@ -126,7 +127,46 @@ print(d.values()) # returns values
 print(d.items()) # returns tuples
 
 # Input from user
+
 a = int(input("Please Enter a Number"))
 print("The Value is",a)
 print(type(a))
 
+# Boolean
+
+a = True
+print(type(a))
+print(1 == 0)  # Returns False
+print("Car" <= 'Desk')
+
+# Logical Conjunctions
+
+print((1 == 0) and "Car" <= 'Desk')  # False
+print((1 == 0) or "Car" <= 'Desk')  # True
+print(not 1 == 0)  # True
+
+# Conditional States
+
+a = 2
+if a == 2:
+    print(a)
+    
+# if-else
+
+age = int(input("Please Enter Your Age"))
+
+if age < 18:
+    print("You shall not pass")
+else:
+    print("Welcome on Board")
+    
+# if-elif-else
+
+grade = int(input("Please Enter Your Grade"))
+
+if grade >= 70:
+    print("High Honor")
+elif grade >= 50:
+    print("Honor")
+else:
+    print("FF")
