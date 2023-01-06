@@ -170,3 +170,39 @@ elif grade >= 50:
     print("Honor")
 else:
     print("FF")
+    
+# Loops
+# In operator
+print(5 in (1, 2, 3, 4))
+
+# For loop-1
+a = [1, 2, 3, 4, 5, 6, 7]
+for i in a:
+    print("Item", i)
+b = [1, 2, 3, 4, 34, 63, 79]
+for i in b:
+    if i % 2 == 0:
+        print(i)
+# For loop-3
+s = "Python"
+for i in s:
+    print(i)
+# For loop-4
+k = [(1, 2), (3, 4), (5, 6), (7, 8)]
+for i in k:
+    print(i)
+# For loop-5
+for i, j in k:
+    print(i, "and", j)
+# For loop-6
+n = {"One": 1, "Two": 2, "Three": 3}
+for i in n:
+    print(i)
+# For loop-7
+for i in n.values():
+    print(i)
+# For loop-8
+for i, j in n.items():
+    print(i, j)
+
+# While loops
