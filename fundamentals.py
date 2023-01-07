@@ -204,5 +204,14 @@ for i in n.values():
 # For loop-8
 for i, j in n.items():
     print(i, j)
-
-# While loops
+# While loop-1
+counter = 0
+while counter < 10:
+    print(counter)
+    counter += 1
+# While loop-2
+index = 0
+a = [1, 2, 3, 4, 5]
+while index < len(a):
+    print('index:', index, "item", a[index])
+    index += 1
