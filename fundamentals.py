@@ -215,3 +215,47 @@ a = [1, 2, 3, 4, 5]
 while index < len(a):
     print('index:', index, "item", a[index])
     index += 1
+
+# range()
+
+print(*range(0, 20))
+print(*range(0, 100))
+print(*range(1, 20))
+print(*range(15))  # Starts from 0
+print(*range(1, 100, 2))
+print(*range(20, 0, -1))  # descending
+for i in range(1, 10):
+    print("*" * i)
+    
+# break&continue
+
+i = 0
+while i < 20:
+    if i == 5:
+        break
+    print(i)
+    i += 1
+
+while True:
+    name = input("Enter your name for exit press 'q' ")
+    if name == "q":
+        break
+    print(name)
+
+a = list(range(11))
+for i in a:
+    if i == 3 or i == 5:
+        continue
+    print(i)
+    
+# list Comprehension
+
+temp = [1,2,3,4,5]
+temp1 = [i for i in temp]
+print(temp1)
+temp2 = [(1,2),(3,4),(5,6)]
+temp2 = [i*j for i,j in temp2]
+print(temp2)
+temp3 = [[1,2,3],[4,5,6,7,8],[9,10,11,12,13,14,15]]
+temp3 = [x for i in temp3 for x in i]
+print(temp3)
