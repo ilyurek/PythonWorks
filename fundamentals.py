@@ -259,3 +259,38 @@ print(temp2)
 temp3 = [[1,2,3],[4,5,6,7,8],[9,10,11,12,13,14,15]]
 temp3 = [x for i in temp3 for x in i]
 print(temp3)
+# Methods
+
+a = [1, 2, 3, 4, 5]
+a.insert(1, "İlyürek")
+print(a)
+help(a.pop)  # to remember
+
+
+# Functions
+def hi(name):
+    print("your name is", name)
+
+
+print(type(hi))
+hi(name="İlyürek")
+
+
+def summy(a, b, c):
+    print(a + b + c)
+
+
+summy(3, 5, 8)
+
+
+def fact(number):
+    fact = 1
+    if (number == 1 or number == 0):
+        print(fact)
+    else:
+        while number >= 1:
+            fact *= number
+            number -= 1
+        print(fact)
+
+fact(4)
