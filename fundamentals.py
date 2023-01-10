@@ -294,3 +294,44 @@ def fact(number):
         print(fact)
 
 fact(4)
+
+def summy(a, b, c):
+    return (a + b + c)
+
+
+total = summy(1, 2, 3)
+print(total)
+
+
+# Flexible
+
+def sm(*a):
+    count = 0
+    for i in a:
+        count += i
+    print(count)
+
+
+sm(2, 3, 2, 5)
+sm(2, 4, 2, 1, 4, 5, 10, 42)
+
+# Local and Global Variables
+c = 10
+def fun():
+    c = 2
+    print(c)  # prints 2
+fun()
+print(c)  # prints 10
+
+d = 5
+def fun1():
+    global d
+    d = 3
+    print(d) # prints 3
+fun1()
+print(d) # prints 3
+
+# lambda
+
+k = lambda x : x*2 # behaves like return 
+print(k(2))
