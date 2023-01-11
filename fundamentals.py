@@ -335,3 +335,15 @@ print(d) # prints 3
 
 k = lambda x : x*2 # behaves like return 
 print(k(2))
+# Modules
+
+import math
+print(dir(math))
+help(math) # to see functions
+print(math.factorial(4))
+print(math.floor(5.6))
+
+# import math as mathematic
+# mathematic.factorial(5)
+# from math import * # there is no need to write library name
+# from math import floor,cell # only want to use these two function
