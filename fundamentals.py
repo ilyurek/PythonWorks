@@ -348,5 +348,22 @@ print(math.floor(5.6))
 # mathematic.factorial(5)
 # from math import * # there is no need to write library name
 # from math import floor,cell # only want to use these two function
-#a
-#3
+
+# Object Oriented Programming
+
+# Class
+
+class Car():
+
+    def __init__(self,model,colour,horse_power,cyl):
+        print("init function")
+        self.model = model
+        self.colour = colour
+        self.horse_power = horse_power
+        self.cyl = cyl
+
+
+car1 = Car("Renault Megan","Silver",110,4)
+car2 = Car("Peugeot","White",90,4)
+print(car1.model)
+print(car2.model)
