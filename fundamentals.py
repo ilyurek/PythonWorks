@@ -355,15 +355,47 @@ print(math.floor(5.6))
 
 class Car():
 
-    def __init__(self,model,colour,horse_power,cyl):
+    def __init__(self, model, colour, horse_power, cyl):
         print("init function")
         self.model = model
         self.colour = colour
         self.horse_power = horse_power
         self.cyl = cyl
 
+    def showInfo(self):
+        print("""Model : {} Colour : {} Horse Power : {} Cyl : {}"""
+              .format(self.model, self.colour, self.horse_power, self.cyl))
 
-car1 = Car("Renault Megan","Silver",110,4)
-car2 = Car("Peugeot","White",90,4)
+
+car1 = Car("Renault Megan", "Silver", 110, 4)
+car2 = Car("Peugeot", "White", 90, 4)
 print(car1.model)
 print(car2.model)
+car1.showInfo()
+
+# Inheritance
+# Class1(Class2):
+# Overriding cancel inherited method
+# super().__init__(a,b,c) lets you access methods in a parent class
+
+class toDo():
+    def __init__(self,name,code,guitar):
+        print("Init toDo has run")
+        self.name = name
+        self.code = code
+        self.guitar = guitar
+class dailyWork(toDo):
+    # Try to test overriding with super
+    def __init__(self,name,code,guitar,worktime):
+        super().__init__(name,code,guitar)
+        print("Init dailywork has run")
+        self.worktime = worktime
+    def show(self):
+        print(self.name,self.code,self.guitar,self.worktime)
+
+
+
+temp = dailyWork("ilyurek","SQL","Fender",6)
+temp.show()
+
+# Errors and Exceptions
