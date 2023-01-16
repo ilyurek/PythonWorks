@@ -398,4 +398,25 @@ class dailyWork(toDo):
 temp = dailyWork("ilyurek","SQL","Fender",6)
 temp.show()
 
-# Errors and Exceptions
+# map(function,list)
+def double(x):
+    return x * 2
+
+
+print(list(map(double, [1, 2, 3, 4, 5, 6])))
+
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+
+print(list(map(lambda x, y: x * y, list1, list2)))
+
+from functools import reduce
+
+
+# reduce(function,list) # cumulative
+def summy(x, y):
+    return x + y
+
+
+print(reduce(summy, [12, 18, 20, 10]))
+print(reduce(lambda x,y: x*y,[1,2,3,4,5])) 
