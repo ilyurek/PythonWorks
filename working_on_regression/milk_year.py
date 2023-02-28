@@ -25,7 +25,7 @@ plt.show()
 
 from sklearn.linear_model import LinearRegression
 
-#linear regression model
+##linear regression model
 
 linear_reg = LinearRegression()
 
