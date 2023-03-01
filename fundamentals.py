@@ -420,4 +420,4 @@ def summy(x, y):
 
 print(reduce(summy, [12, 18, 20, 10]))
 print(reduce(lambda x,y: x*y,[1,2,3,4,5])) 
-#########
+###########
