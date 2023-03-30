@@ -56,3 +56,4 @@ y_head = linear_reg.predict(array)
 plt.plot(array, y_head ,color ="red")
 
 plt.savefig("milky.png")
+#
